@@ -6,6 +6,8 @@ IF OBJECT_ID('Users','U') IS NOT NULL
 DROP TABLE Users;
 IF OBJECT_ID('Candidates','U') IS NOT NULL
 DROP TABLE Candidates;
+IF OBJECT_ID('Votes','U') IS NOT NULL
+DROP TABLE Votes;
 
 
 CREATE TABLE Roles
@@ -28,7 +30,14 @@ CREATE TABLE Users
 CREATE TABLE Candidates
 (
 	id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	user_id INT REFERENCES Users(id)
+	user_id INT REFERENCES Users(id),
+	votes_Count INT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE Votes
+(
+	voter INT NOT NULL REFERENCES Users(id),
+	candidate INT NOT NULL REFERENCES Candidates(id)
 );
 
 INSERT INTO Roles(name) VALUES
