@@ -44,4 +44,10 @@ INSERT INTO Roles(name) VALUES
 ('user'),('admin')
 
 INSERT INTO users (login, password, name, surname, role)
-  VALUES ('user1', 'password1', 'Krzysztof', 'Czerwiñski', 2)
+  VALUES ('user1', 'password1', 'Krzysztof', 'CzerwiÅ„ski', 2)
+INSERT INTO users (login, password, name, surname, role)
+  VALUES ('user2', 'password2', 'Jan', 'Przybylski', 2)
+INSERT INTO users (login, password, name, surname, role)
+  VALUES ('user3', 'password3', 'Kasia', 'Zbroja', 2)
+INSERT INTO users (login, password, name, surname, role)
+  VALUES ('user4', 'password4', 'Dariusz', 'Wdowczyk', 2)  
