@@ -17,6 +17,9 @@
   <title>Wybory</title>
 <body>
 
+	<a href="rejestracja.php">Rejestracja</a><br/><br/>
+
+
 	<form action="zaloguj.php" method="post">
 	
 		Login: <br/><input type="text" name="login" /><br/>

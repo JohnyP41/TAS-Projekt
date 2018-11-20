@@ -28,16 +28,25 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
   `user` text COLLATE utf8_polish_ci NOT NULL,
   `pass` text COLLATE utf8_polish_ci NOT NULL,
   `fname` text COLLATE utf8_polish_ci NOT NULL,
-  `lname` text COLLATE utf8_polish_ci NOT NULL
+  `lname` text COLLATE utf8_polish_ci NOT NULL,
+  `email` text COLLATE utf8_polish_ci NOT NULL,
+  `role` text COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+  --
+  -- WSTĘPNIE rola:
+  -- admin==0,
+  -- kandydat==1,
+  -- glosujacy==2
+  --
 
 --
 -- Zrzut danych tabeli `uzytkownicy`
 --
 
-INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `fname`, `lname`) VALUES
-(1, 'login', 'haslo', 'Adam', 'Nowak'),
-(2, 'daro', '123', 'Dariusz', 'Wdowczyk');
+INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `fname`, `lname`,`email`, `role`) VALUES
+(1, 'login', 'haslo', 'Adam', 'Nowak','adam@poczta.com', '0'),
+(2, 'daro', '123', 'Dariusz', 'Wdowczyk','daro@poczta.com', '0');
 
 
 --
