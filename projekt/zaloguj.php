@@ -42,6 +42,9 @@ require_once "connect.php";
 					$_SESSION['user'] = $wiersz['user'];
 					$_SESSION['fname'] = $wiersz['fname'];
 					$_SESSION['lname'] = $wiersz['lname'];
+					$_SESSION['email'] = $wiersz['email'];
+					$_SESSION['role'] = $wiersz['role'];
+					$_SESSION['points'] = $wiersz['points'];
 					
 					
 					

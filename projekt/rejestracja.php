@@ -94,10 +94,12 @@ $passB = $_POST['passB'];
 		if(!isset($_POST['role']))
 		{
 			$role = "2";
+			$points = 1;
 		}
 		else
 		{
 			$role = "1";
+			$points = 0;
 		}
 		
 		
@@ -109,7 +111,7 @@ $passB = $_POST['passB'];
 		
 		try
 		{
-			$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
+			$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name, $db_role);
 			if ($polaczenie->connect_errno!=0)
 			{
 				throw new Exception(mysqli_connect_errno());
@@ -145,7 +147,7 @@ $passB = $_POST['passB'];
 						
 				if ($works==true)
 				{
-					if($polaczenie->query("INSERT INTO uzytkownicy VALUES(NULL,'$user','$pass_hash','$fname','$lname','$email','$role')"))
+					if($polaczenie->query("INSERT INTO uzytkownicy VALUES(NULL,'$user','$pass_hash','$fname','$lname','$email','$points','$role')"))
 					{
 						$_SESSION['udanarejestracja']=true;
 						header('Location: witamy.php');

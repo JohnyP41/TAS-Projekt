@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Baza danych: `osadnicy`
+-- Baza danych: 
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,9 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
   `fname` text COLLATE utf8_polish_ci NOT NULL,
   `lname` text COLLATE utf8_polish_ci NOT NULL,
   `email` text COLLATE utf8_polish_ci NOT NULL,
+  `points` int(11) NOT NULL,
   `role` text COLLATE utf8_polish_ci NOT NULL
+  
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
   --
@@ -44,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
 -- Zrzut danych tabeli `uzytkownicy`
 --
 
-INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `fname`, `lname`,`email`, `role`) VALUES
-(1, 'login', 'haslo', 'Adam', 'Nowak','adam@poczta.com', '0'),
-(2, 'daro', '123', 'Dariusz', 'Wdowczyk','daro@poczta.com', '0');
+INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `fname`, `lname`,`email`, `role`, `points`) VALUES
+(1, 'login', 'haslo', 'Adam', 'Nowak','adam@poczta.com', '0','0'),
+(2, 'daro', '123', 'Dariusz', 'Wdowczyk','daro@poczta.com', '0','0');
 
 
 --
