@@ -200,7 +200,10 @@ $passB = $_POST['passB'];
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
   <title>Wybory - Rejestracja</title>
-  
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
   <style>
 	.error
 	{
