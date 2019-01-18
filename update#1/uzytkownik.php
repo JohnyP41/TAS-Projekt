@@ -124,7 +124,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	data: [{
 		type: "pie", //change type to bar, line, area, pie, etc  
-        showInLegend: true,
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
 });
