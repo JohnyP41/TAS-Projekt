@@ -23,6 +23,7 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="icon" href="favicon.png">
 <body>
 
 	<a href="index2.php">Konto zostało utworzone. Zaloguj sie na swoje konto.</a><br/><br/>
