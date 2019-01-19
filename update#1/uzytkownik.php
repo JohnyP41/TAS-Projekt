@@ -97,7 +97,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('select id,fname, points from uzytkownicy'); 
+    $handle = $link->prepare('select id,fname, points from uzytkownicy where points>1'); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 		
@@ -123,6 +123,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		text: "Wyniki"
 	},
 	data: [{
+		showInLegend: true,
 		type: "pie", //change type to bar, line, area, pie, etc  
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
