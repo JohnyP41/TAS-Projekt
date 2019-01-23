@@ -4,7 +4,7 @@ session_start();
 
 if((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 {
-	header('Location: index.php');
+	header('Location: index2.php');
 	exit();
 }
 
@@ -55,12 +55,12 @@ require_once "connect.php";
 				else
 				{
 					$_SESSION['bladlogowania']='<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-					header('Location: index.php');
+					header('Location: index2.php');
 				}
 			}
 			else{
 				$_SESSION['bladlogowania']='<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-				header('Location: index.php');
+				header('Location: index2.php');
 			}
 		}
 		

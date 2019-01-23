@@ -1,0 +1,37 @@
+div[name=div1]
+{
+position:absolute;
+left:0; right:0;
+top:30%; bottom:30%;
+width: 50%;
+height: 100%; 
+padding 20px;  
+background-color: #f2f2f2;
+margin: auto; 
+text-align: center;
+}
+div[name=div2]
+{
+	text-align: center;
+}
+input[type=text], [type=password]
+{
+	width: 40%;
+	padding: 12px 20px;
+	margin: 1px auto;
+	box-sizing: border-box;
+	text-align: center;
+	border: none;
+}
+input[type=submit]
+{
+  width: 40%;
+  background-color: #337ab7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}

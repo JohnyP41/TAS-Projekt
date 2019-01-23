@@ -48,6 +48,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 300;
+	color: black;
 }
 
 header .header-content .header-content-inner p {

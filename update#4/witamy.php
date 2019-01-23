@@ -26,7 +26,7 @@
 <link rel="icon" href="favicon.png">
 <body>
 
-	<a href="index.php">Konto zostało utworzone. Zaloguj sie na swoje konto.</a><br/><br/>
+	<a href="index2.php">Konto zostało utworzone. Zaloguj sie na swoje konto.</a><br/><br/>
 
 
 

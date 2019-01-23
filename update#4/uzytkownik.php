@@ -20,7 +20,7 @@ else
 		{
 			
 
-				echo "<br />Imię: ".$row['fname']."<br />Nazwisko: ".$row['lname']."<br />Email: ".$row['email']."<br />Aktualna punktacja: ".$row['points'].'<br/>';
+				echo "<br />Imię: ".$row['fname']."<br />Nazwisko: ".$row['lname']."<br />Aktualna punktacja: ".$row['points'].'<br/>';
 				if ($_SESSION['points']>0){
 				echo "<form method='post'>";
 				echo "<input type='submit' name=".$row['user']." id=".$row['id']." value='Zagłosuj na tego kandydata' /><br/>";
@@ -133,7 +133,6 @@ chart.render();
 }
 </script>
 
-<div id="chartContainer" style="height: 300px; width: 100%;"></div>
   
 
 <?php
@@ -158,6 +157,8 @@ if($_SESSION['role']=='2')
 
 
 ?>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 
 </body>

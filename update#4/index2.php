@@ -20,7 +20,7 @@
 <link rel="icon" href="favicon.png">
 <body align = "center">
 	<div>
-		<h1>Wybory</h1>
+		<h1>Logowanie</h1>
 		<br><br>
 		<form action="zaloguj.php" method="post">
 			<br/><input type="text" name="login" placeholder="Login"/><br/>
@@ -35,7 +35,7 @@
 	if(isset($_SESSION['bladlogowania']))
 		echo "<br/>".$_SESSION['bladlogowania'];
 ?>
-</div>
+
 </body>
 
 

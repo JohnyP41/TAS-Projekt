@@ -196,6 +196,7 @@ $passB = $_POST['passB'];
 
 <html lang="pl">
 <head>
+  <link rel="stylesheet" href="css/styles1.css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
@@ -204,78 +205,75 @@ $passB = $_POST['passB'];
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link rel="icon" href="favicon.png">
-  <style>
-	.error
-	{
-		color:red;
-		margin-top: 10px;
-		margin-bottom 10px;
-	}
-  </style>
 <body>
-
-
+  <div name="div1">
+	  <h1>Rejestracja</h1><br><br>
+	  <form method="post" align ="center">
+	  <div name="div2">
+		  <br/><input type="text" name=fname placeholder="Imię"><br>
+		  <?php
+			if(isset($_SESSION['err_fname']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_fname']."<font color=\"black\">";
+				unset($_SESSION['err_fname']);
+			}
+		  ?>
+		  <br>
+		  <br/><input type="text" name=lname placeholder="Nazwisko"><br>
+			<?php
+			if(isset($_SESSION['err_lname']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_lname']."<font color=\"black\">";
+				unset($_SESSION['err_lname']);
+			}
+		  ?>
+		  <br>
+		  <br/><input type="text" name=email placeholder="E-mail"><br>
+			<?php
+			if(isset($_SESSION['err_email']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_email']."<font color=\"black\">";
+				unset($_SESSION['err_email']);
+			}
+		  ?>
+		  <br>
+		  <br/><input type="text" name=user placeholder="Login"><br>
+			<?php
+			if(isset($_SESSION['err_user']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_user']."<font color=\"black\">";
+				unset($_SESSION['err_user']);
+			}
+		  ?>
+		  <br>
+		  <br/><input type="password" name='passA' placeholder="Hasło"><br>
+			<?php
+			if(isset($_SESSION['err_passA']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_passA']."<font color=\"black\">";
+				unset($_SESSION['err_passA']);
+			}
+		  ?>
+		  <br>
+		  <br/><input type="password" name='passB' placeholder="Powtórz hasło"><br>
+			<?php
+			if(isset($_SESSION['err_passB']))
+			{
+				echo "<font color=\"red\">".$_SESSION['err_passB']."<font color=\"black\">";
+				unset($_SESSION['err_passB']);
+			}
+		  ?>
+		  <br>
+		</div>
+	  <label>
+		<br>Chcę Kandydować: <input type="checkbox" name=role> <br/><br/>
+	  </label>
+	  <br/><input type="submit" value="Załóż konto">
+	  
+	  
+	  
+	  </form>
+  </div>
 </body>
-
-  <form method="post" align ="center">
-  
-  Imię: <br/><input type="text" name=fname> <br/><br/>
-  <?php
-	if(isset($_SESSION['err_fname']))
-	{
-		echo '<div class="error">'.$_SESSION['err_fname'].'</div>';
-		unset($_SESSION['err_fname']);
-	}
-  ?>
-  Nazwisko: <br/><input type="text" name=lname> <br/><br/>
-    <?php
-	if(isset($_SESSION['err_lname']))
-	{
-		echo '<div class="error">'.$_SESSION['err_lname'].'</div>';
-		unset($_SESSION['err_lname']);
-	}
-  ?>
-  E-mail: <br/><input type="text" name=email> <br/><br/>
-    <?php
-	if(isset($_SESSION['err_email']))
-	{
-		echo '<div class="error">'.$_SESSION['err_email'].'</div>';
-		unset($_SESSION['err_email']);
-	}
-  ?>
-  Login: <br/><input type="text" name=user> <br/><br/>
-    <?php
-	if(isset($_SESSION['err_user']))
-	{
-		echo '<div class="error">'.$_SESSION['err_user'].'</div>';
-		unset($_SESSION['err_user']);
-	}
-  ?>
-  Hasło: <br/><input type="text" name='passA'> <br/><br/>
-    <?php
-	if(isset($_SESSION['err_passA']))
-	{
-		echo '<div class="error">'.$_SESSION['err_passA'].'</div>';
-		unset($_SESSION['err_passA']);
-	}
-  ?>
-  Powtórz Hasło: <br/><input type="text" name='passB'> <br/><br/>
-    <?php
-	if(isset($_SESSION['err_passB']))
-	{
-		echo '<div class="error">'.$_SESSION['err_passB'].'</div>';
-		unset($_SESSION['err_passB']);
-	}
-  ?>
-  <label>
-	Chcę Kandydować: <input type="checkbox" name=role> <br/><br/>
-  </label>
-  <br/><input type="submit" value="Załóż konto">
-  
-  
-  
-  </form>
-  
-
 </head>
 </html>
