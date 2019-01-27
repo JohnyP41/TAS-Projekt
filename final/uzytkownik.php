@@ -225,7 +225,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('select id,fname, points from uzytkownicy where points>1'); 
+    $handle = $link->prepare('select id,fname, points from uzytkownicy where role = 1'); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 		
