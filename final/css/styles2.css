@@ -1,0 +1,77 @@
+div[name=bar]
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+div[name=trend]
+{
+	position: relative;
+	top: 90px;
+}
+div[name=startstop]
+{
+	position: relative;
+	top: 90px;
+}
+div[name=logoutB]
+{
+	text-align: right;
+}
+div[name=table]
+{
+	position: relative;
+	top: 90px;
+	width: 50%;
+	margin: 0 auto;
+}
+div[name=votingEnd]
+{
+	position: relative;
+	top: 90px;
+	color: red;
+	font-size: 16px;
+	text-align: center;
+}
+input[type=submit], [type=password]
+{
+  width: auto;
+  background-color: #337ab7;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  right: 0;
+}
+input[type=button]
+{
+  width: 10%;
+  background-color: #337ab7;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  right: 0;
+}
+table 
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td
+{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) 
+{
+  background-color: #f2f2f2;
+}
