@@ -1,0 +1,1 @@
+Admin musi posiadac w bazie danych ID  "1" oraz mieæ role "0".
