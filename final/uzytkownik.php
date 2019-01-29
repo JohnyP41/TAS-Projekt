@@ -264,7 +264,7 @@ if($_SESSION['role']=='0')
 
 if($_SESSION['role']=='3')
 {
-	echo "Zarejestrowałeś się jako kandydat. Oczekuj aż Twoja kandydatura zostanie zaakceptowana.<br/><br/>";
+	echo "<font color = 'red'>.<b>Zarejestrowałeś się jako kandydat. Oczekuj aż Twoja kandydatura zostanie zaakceptowana.</b><font color = 'black'>";
 	
 }
 
